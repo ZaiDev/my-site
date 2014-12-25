@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>Shuffzco</title>
+<meta name="description" content="Hi, I'm Zai! I'm a computer science student from Manchester, who loves graphic and web design. UI (User interface) work is my favourite, but I do love to work on HTML/CSS front-end web development projects.">
+
+<link rel="stylesheet" href="css/main.css" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Exo:300,400,500italic|Montserrat|Arvo:400,400italic' rel='stylesheet' type='text/css'>
+
+<!-- Add jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+<link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+      
+<script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+        /*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+	});
+</script>
+<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #eee;
+		}
+
+</style>
+</head>
+<body>
+    
+    <header>
+        <h1>Hi, I'm Zai!</h1>
+        <h3>GRAPHIC AND WEB DESIGN</h3>
+    </header>
+    
+    <div id="about">
+        <div class="container">
+            <h4>About me</h4>
+            <p>
+            Hi, I'm <a href="http://www.twitter.com/OGShuffz">Zaire</a> a young self-taught UI/Front end web designer from <i>Manchester</i>. I'm currently a full-time student studying Computer Science who's working towards long-term goals of working as a UI/UX designer for a major company such as Google or Facebook..
+            <br/>
+            <br/>
+            I have intermediate knowledge in HTML5/CSS3 as well as Python. I'm working on improving my PHP, JQuery and Javascript to allow more versatility in front-end as well as back-end development. I have 1 years experience with front-end web development projects.
+            <br/>
+            <br/>
+            Graphic design wise, I've been working with how Adobe design products such as <i>Photoshop</i> and <i>Fireworks</i> for 3 years as a hobby. I prefer to work on UI based projects but I'm quite flexible as a designer.
+            </p>
+        </div>
+    </div>
+    
+    <div id="gallery">
+        <div class="container">
+            <h4>Recent Projects</h4>
+<!--ONE-->
+            <a class="fancybox" href="images/portfolio1big.png" data-fancybox-group="gallery" title="Portfolio..."><img src="images/portfolio1small.png" alt="" /></a>
+<!--TWO-->
+            <a class="fancybox" href="images/arsenalbig.png" data-fancybox-group="gallery" title="Arsenal 2014-2015 iPhone 6/6 Plus wallpaper.">
+            <a class="fancybox" href="images/madridbig.png" data-fancybox-group="gallery" title="Real Madrid 2014-2015 iPhone 6/6 Plus wallpaper. Click the left arrow for more.">    
+            <img src="images/arsenalsmall.png" alt="" /> 
+            </a></a>
+<!--THREE-->
+            <a class="fancybox" href="images/energylogosmall.png" data-fancybox-group="gallery" title="Here is the logo I done for a small company who go by the name EnergyEnt.">
+            <a class="fancybox" href="images/energyflyerbig.png" data-fancybox-group="gallery" title="Here is the flyer I done for a small company who go by the name EnergyEnt. Click the left arrow for more.">
+            <a class="fancybox" href="images/energysocialmedia.png" data-fancybox-group="gallery" title="Here is the social media banner I done for a small company who go by the name EnergyEnt. Click the left arrow for more.">
+            <img src="images/energylogosmall.png" alt="" /></a></a></a>
+<!--FOUR-->
+            <a class="fancybox" href="images/thankyouthierry.png" data-fancybox-group="gallery" title="#ThankYouThierry work. Speed art video: "></a> 
+            <img src="images/thankyouthierrysmall.png" alt="" /></a>
+<!--FIVE-->
+            <a class="fancybox" href="images/shuffzcostationary.png" data-fancybox-group="gallery" title="A stationary mockup I made for Shuffzco">
+            <img src="images/shuffzcobusinesscardsmall.png" alt="" /></a>
+<!--SIX-->
+            <a class="fancybox" href="images/grindgearlanding.png" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp">
+            <a class="fancybox" href="images/grindgearapparel.png" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp">
+            <a class="fancybox" href="images/grindgearcart.png" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp">
+            <img src="images/grindgearsmall.png" alt="" />
+                </a></a></a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h4></h4>
+            <h5>
+                For any enquiries <u>contact</u> me through the following: <br/>
+                <b>Email:</b> ZaireAllen@gmail.com <br/>
+                <b>Skype:</b> ZaiAll96
+            </h5>
+            <p>Places which I hang out at:</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100002400519017" target="_blank">Facebook</a></li>
+                    <li><a href="http://www.twitter.com/ZaireCA" target="_blank">Twitter</a></li>
+                    <li><a href="http://instagram.com/shuffzco" target="_blank">Instagram</a></li>
+                    <li><a href="https://www.behance.net/ZaireCA" target="_blank">Behance</a></li>
+                </ul>
+            
+        </div>
+        
+        <p id=copy>&copy;2014 Zaire Allen</p>
+    </footer>
+</body>
+</html>
